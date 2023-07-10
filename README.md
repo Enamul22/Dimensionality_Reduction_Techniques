@@ -1,4 +1,7 @@
 # Dimensionality Reduction Techniques on the MNIST Dataset
+![Line Graph](/Users/enamul/Desktop/Data Science Projects/Dimensionality Reduction/Images/Line graph.png)
+![PCA](/Users/enamul/Desktop/Data Science Projects/Dimensionality Reduction/Images/PCA.png)
+![TSNE](/Users/enamul/Desktop/Data Science Projects/Dimensionality Reduction/Images/TSNE.png)
 
 # Introduction
 This repository contains a project that investigates the performance of four different dimensionality reduction techniques applied to the popular MNIST dataset. The aim of this project is to understand how different methods - namely Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), t-Distributed Stochastic Neighbor Embedding (t-SNE), and Uniform Manifold Approximation and Projection (UMAP) - can influence the performance of a machine learning model. In particular, we apply these methods to the task of handwritten digit classification using the K-Nearest Neighbors (KNN) and RandomForest classifiers.
