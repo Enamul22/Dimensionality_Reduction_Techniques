@@ -1,33 +1,21 @@
-# Dimensionality Reduction Techniques on the MNIST Dataset
-![Line Graph](/Users/enamul/Desktop/Data Science Projects/Dimensionality Reduction/Images/Line graph.png)
-![PCA](/Users/enamul/Desktop/Data Science Projects/Dimensionality Reduction/Images/PCA.png)
-![TSNE](/Users/enamul/Desktop/Data Science Projects/Dimensionality Reduction/Images/TSNE.png)
+# Dimensionality Reduction Techniques and Visualizations on the MNIST Dataset
+
+![line graph](<Images/Line graph.png>)
 
 # Introduction
-This repository contains a project that investigates the performance of four different dimensionality reduction techniques applied to the popular MNIST dataset. The aim of this project is to understand how different methods - namely Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), t-Distributed Stochastic Neighbor Embedding (t-SNE), and Uniform Manifold Approximation and Projection (UMAP) - can influence the performance of a machine learning model. In particular, we apply these methods to the task of handwritten digit classification using the K-Nearest Neighbors (KNN) and RandomForest classifiers.
+This repository contains a project that investigates the performance of four different dimensionality reduction techniques applied to the popular MNIST dataset. The aim of this project is to understand how different methods - namely Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), t-Distributed Stochastic Neighbor Embedding (t-SNE), and Uniform Manifold Approximation and Projection (UMAP) - can influence the performance of a machine learning model. In particular, I applied these methods to the task of handwritten digit classification using the K-Nearest Neighbors (KNN) and RandomForest classifiers.
 
 # Data
-The MNIST dataset is a large database of handwritten digits commonly used for training and testing in the field of machine learning. The dataset contains 70,000 28x28 grayscale images of the ten digits, along with a test set of 10,000 images. More details about the dataset can be found here.
+The MNIST dataset is a large database of handwritten digits commonly used for training and testing in the field of machine learning. The dataset contains 70,000 28x28 grayscale images of the ten digits, along with a test set of 10,000 images. More details about the dataset can be imported with this code: from sklearn.datasets import fetch_openml or found here: https://www.kaggle.com/datasets/hojjatk/mnist-dataset.
 
-# Methods
+# Methodology
+Data Preprocessing: I first load and preprocess the MNIST data, ensuring it is appropriately formatted for use with my models.
 
-Sure, I'd be happy to help. Here's a draft you can start with:
+Dimensionality Reduction: Then I apply the four different dimensionality reduction techniques - PCA, LDA, t-SNE, and UMAP - to transform the high-dimensional data into a two-dimensional space.
 
-Dimensionality Reduction Techniques on the MNIST Dataset
-Introduction
-This repository contains a project that investigates the performance of four different dimensionality reduction techniques applied to the popular MNIST dataset. The aim of this project is to understand how different methods - namely Principal Component Analysis (PCA), Linear Discriminant Analysis (LDA), t-Distributed Stochastic Neighbor Embedding (t-SNE), and Uniform Manifold Approximation and Projection (UMAP) - can influence the performance of a machine learning model. In particular, we apply these methods to the task of handwritten digit classification using the K-Nearest Neighbors (KNN) and RandomForest classifiers.
+Model Training and Evaluation: After applying each of the dimensionality reduction techniques, I train both a KNN and RandomForest classifier on the transformed training data and evaluate their performance on the test set. The metrics used for evaluation are precision, recall, F1-score, and overall accuracy.
 
-Data Description
-The MNIST dataset is a large database of handwritten digits commonly used for training and testing in the field of machine learning. The dataset contains 70,000 28x28 grayscale images of the ten digits, along with a test set of 10,000 images. More details about the dataset can be found here.
-
-Methodology
-Data Preprocessing: We first load and preprocess the MNIST data, ensuring it is appropriately formatted for use with our models.
-
-Dimensionality Reduction: We then apply the four different dimensionality reduction techniques - PCA, LDA, t-SNE, and UMAP - to transform the high-dimensional data into a two-dimensional space.
-
-Model Training and Evaluation: After applying each of the dimensionality reduction techniques, we train both a KNN and RandomForest classifier on the transformed training data and evaluate their performance on the test set. The metrics used for evaluation are precision, recall, F1-score, and overall accuracy.
-
-Data Visualization: To help visualize the effect of each dimensionality reduction technique, we generate scatter plots showing the MNIST digits projected into two dimensions
+Data Visualization: To help visualize the effect of each dimensionality reduction technique, I generate scatter plots showing the MNIST digits projected into two dimensions
 
 # Results
 The project revealed interesting insights into the relative performance of the different dimensionality reduction techniques. While the exact performance varied based on the specific model used and the metrics considered, all techniques demonstrated the potential to significantly improve model performance compared to using the raw, high-dimensional data.
